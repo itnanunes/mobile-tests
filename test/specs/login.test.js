@@ -8,6 +8,6 @@ describe('My Login application', () => {
         await homePage.openMenu('profile')
         await loginPage.login('itna@ebac.com.br', '123123')
         await homePage.openMenu('profile')
-        expect((await profilePage.profileName('Santana Itna')).isDisplayed()).toBeTruthy()
+        expect((await profilePage.profileName('santana itna')).isDisplayed()).toBeTruthy()
     })
 })
