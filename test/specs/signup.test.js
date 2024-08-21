@@ -7,9 +7,7 @@ describe('Se cadastrar na application', () => {
     it('Criar cadastro no aplicativo', async () => {
         await homePage.openMenu('profile');
         await homePage.openSignUpPage();
-        await signUpPage.formulario('João','Silva','1234567890','joao.silva@email.com','senha123','senha123');
+        await signUpPage.formulario('itnaaaaa','Santana','1234567890','itnaaaaa@santananunes.com','senha123','senha123');
         await signUpPage.submitForm();
-
-    
     });
 });
