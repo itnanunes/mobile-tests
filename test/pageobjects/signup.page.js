@@ -3,12 +3,13 @@ import { $ } from '@wdio/globals';
 
 class SignUpPage {
 
-    get firstNameInput() { return $('#firstName'); }
-    get lastNameInput() { return $('#lastName'); }
-    get phoneInput() { return $('#phone'); }
-    get emailInput() { return $('#email'); }
-    get passwordInput() { return $('#password'); }
-    get repasswordInput() { return $('#repassword'); }
+    //get firstNameInput() { return $('#firstName'); }
+    get firstNameInput() { return $('android=new UiSelector().resourceId("firstName")'); }
+    get lastNameInput() { return $('android=new UiSelector().resourceId("lastName")'); }
+    get phoneInput() { return $('android=new UiSelector().resourceId("phone")'); }
+    get emailInput() { return $('android=new UiSelector().resourceId("email")'); }
+    get passwordInput() { return $('android=new UiSelector().resourceId("password")'); }
+    get repasswordInput() { return $('android=new UiSelector().resourceId("repassword")'); }
 
     async formulario(firstName, lastName, phone, email, password, repassword) {
         await this.firstNameInput.setValue(firstName);
